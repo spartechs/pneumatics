@@ -7,7 +7,7 @@ import edu.wpi.first.wpilibj2.command.SubsystemBase;
 import frc.robot.Constants;
 
 public class PneumaticSub extends SubsystemBase{
-    private DoubleSolenoid pitchSolenoid;
+    private final DoubleSolenoid pitchSolenoid;
 
     public PneumaticSub(){
         pitchSolenoid = new DoubleSolenoid(PneumaticsModuleType.CTREPCM, Constants.forwardControl, Constants.reverseControl);

@@ -5,7 +5,7 @@ import frc.robot.subsystems.PneumaticSub;
 
 public class PitchUp extends CommandBase{
     
-    private PneumaticSub pneumatic;
+    private final PneumaticSub pneumatic;
 
   /**
    * Creates a new PitchUp.
