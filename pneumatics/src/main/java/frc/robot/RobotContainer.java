@@ -5,6 +5,7 @@
 package frc.robot;
 
 import frc.robot.commands.PitchDown;
+import frc.robot.commands.PitchOff;
 import frc.robot.commands.PitchUp;
 import frc.robot.subsystems.PneumaticSub;
 import edu.wpi.first.wpilibj.Joystick;
@@ -47,7 +48,9 @@ public class RobotContainer {
     final JoystickButton butt2 = new JoystickButton(joystick, 2);
 
     butt1.onTrue(new PitchDown(pSub));
+    butt1.onFalse(new PitchOff(pSub));
     butt2.onTrue(new PitchUp(pSub));
+    butt2.onFalse(new PitchOff(pSub));
   }
 
   /**

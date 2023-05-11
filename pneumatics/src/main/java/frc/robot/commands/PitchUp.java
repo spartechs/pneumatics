@@ -15,7 +15,7 @@ public class PitchUp extends CommandBase{
   public PitchUp(PneumaticSub subsystem) {
     pneumatic = subsystem;
     // Use addRequirements() here to declare subsystem dependencies.
-    addRequirements(subsystem);
+    addRequirements(pneumatic);
   }
 
   // Called when the command is initially scheduled.

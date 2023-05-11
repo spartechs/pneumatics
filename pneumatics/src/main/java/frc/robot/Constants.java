@@ -16,6 +16,6 @@ public final class Constants {
   public static class OperatorConstants {
     public static final int kDriverControllerPort = 0;
   }
-  public static final int forwardControl = 0;
-  public static final int reverseControl = 0;
+  public static final int forwardChannel = 5;
+  public static final int reverseChannel = 4;
 }
