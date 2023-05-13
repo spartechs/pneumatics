@@ -30,32 +30,32 @@ public class PneumaticSub extends SubsystemBase{
     }
 
 
-    public void e() {
-
-        final Class<? extends DoubleSolenoid> solenoidClass = pitchSolenoid.getClass();
-
-        // Get base
-        Field baseField;
-        try {
-            baseField = solenoidClass.getField("m_module");
-        } catch (NoSuchFieldException e) {
-            throw new RuntimeException(e);
-        }
-        baseField.setAccessible(true);
-
-        PneumaticsBase base;
-        try {
-            base = (PneumaticsBase) baseField.get(solenoidClass);
-        } catch (IllegalAccessException e) {
-            throw new RuntimeException(e);
-        }
-
-        // Get mask
-        Field maskField;
-        baseField = solenoidClass.getField("")
-
-        base.setSolenoids();
-    }
+//    public void e() {
+//
+//        final Class<? extends DoubleSolenoid> solenoidClass = pitchSolenoid.getClass();
+//
+//        // Get base
+//        Field baseField;
+//        try {
+//            baseField = solenoidClass.getField("m_module");
+//        } catch (NoSuchFieldException e) {
+//            throw new RuntimeException(e);
+//        }
+//        baseField.setAccessible(true);
+//
+//        PneumaticsBase base;
+//        try {
+//            base = (PneumaticsBase) baseField.get(solenoidClass);
+//        } catch (IllegalAccessException e) {
+//            throw new RuntimeException(e);
+//        }
+//
+//        // Get mask
+//        Field maskField;
+//        baseField = solenoidClass.getField("")
+//
+//        base.setSolenoids();
+//    }
 
 }
 
